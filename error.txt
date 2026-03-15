@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\shrik\OneDrive\Desktop\projects\Football-Video-Analysis-main\test_p.py", line 20, in <module>
+    cam_estimator = CameraMovementEstimator(np.zeros((10,10,3)))
+  File "C:\Users\shrik\OneDrive\Desktop\projects\Football-Video-Analysis-main\camera_movement_estimator\camera_movement_estimator.py", line 17, in __init__
+    first_frame_grayscale = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.13.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:94: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0xb1d3297b::Set<1,-1,-1>,struct cv::impl::A0xb1d3297b::Set<0,2,5>,4>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Unsupported depth of input image:
+>     'VDepth::contains(depth)'
+> where
+>     'depth' is 6 (CV_64F)
+
