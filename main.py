@@ -37,7 +37,10 @@ from speed_and_distance_estimator import SpeedAndDistance_Estimator
 
 # ── new analytics modules ─────────────────────────────────────────────────────
 from analytics import AccelerationAnalyzer, SpeedZoneClassifier, DirectionAnalyzer
+<<<<<<< HEAD
 from analytics.player_performance import PlayerPerformanceTracker
+=======
+>>>>>>> 97fe184166cc0685367faade91030cdceb76d801
 from export import DataExporter
 from visualization import HeatmapGenerator, PossessionOverlay
 
@@ -107,12 +110,15 @@ def main() -> None:
         read_from_stub=True,
         stub_path="stubs/track_stubs.pkl",
     )
+<<<<<<< HEAD
     
     # Task 1: Fix Player Tracking IDs
     print("       Filtering to 22 fixed player IDs (Player_1 to Player_22) …")
     perf_tracker = PlayerPerformanceTracker()
     tracks = perf_tracker.filter_and_assign_fixed_ids(tracks)
     
+=======
+>>>>>>> 97fe184166cc0685367faade91030cdceb76d801
     tracker.add_position_to_tracks(tracks)
 
     # ── 3. Camera motion compensation ────────────────────────────────────────

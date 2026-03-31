@@ -1,2 +1,5 @@
-*__pycahce__*
+﻿models/
+*.pt
+output_videos/
+__pycache__/
 *.pyc
